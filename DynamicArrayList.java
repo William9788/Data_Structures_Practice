@@ -12,4 +12,10 @@ public class DynamicArrayList {
     public int size(){
         return count;
     }
+    public String get(int position){
+    if(position<0||position>=count){
+        throw new IndexOutOfBoundsException("Invalid position: "+position);
+    }
+    return data[position];
+}
 }
