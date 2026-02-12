@@ -9,4 +9,7 @@ public class DynamicArrayList {
         data = new String[initialSize];
         count=0;
     }
+    public int size(){
+        return count;
+    }
 }
