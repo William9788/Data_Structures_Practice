@@ -5,4 +5,8 @@ public class DynamicArrayList {
         data = new String[10];
         count=0;
     }
+    public DynamicArrayList(int initialSize){
+        data = new String[initialSize];
+        count=0;
+    }
 }
