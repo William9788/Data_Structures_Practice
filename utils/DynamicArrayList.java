@@ -40,8 +40,12 @@ public class DynamicArrayList {
         String[]newData = new String[data.length*2];
         System.arraycopy(data, 0, newData, 0, count);
         data = newData;
-    } 
+    }
         }
-        
+        public void add(String object){
+        ensureCapacity();
+        data[count] = object;
+        count++;
+        }
 }
 
