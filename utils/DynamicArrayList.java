@@ -47,5 +47,16 @@ public class DynamicArrayList {
         data[count] = object;
         count++;
         }
+    public void add(String object, int position){
+        if(position<0||position>count){
+            throw new IndexOutOfBoundsException("Invaild position:"+position);
+        }
+        ensureCapacity();
+        for(int i =count;i>position;i--){
+            data[i] = data[i-1];
+        }
+        data[position] = object;
+        count++;
+    } 
 }
 
