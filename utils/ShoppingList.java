@@ -8,7 +8,7 @@ public class ShoppingList {
         DynamicArrayList list = new DynamicArrayList();
         list.add("Apple");
         list.add("Banana");
-        list.add("Candle");
+        list.add("Chocolate");
         list.add("Dog");
         list.add("Eggs");
         list.add("Gun");
@@ -19,7 +19,7 @@ public class ShoppingList {
         for(int i =0;i<list.size();i++){
             System.out.println(list.get(i));
         }
-        int position = list.indexOf("Apple");
-        System.out.println("Apple position:"+ position);
+        int position = list.indexOf("Chocolate");
+        System.out.println("Chocolate position:"+ position);
     }
 }
