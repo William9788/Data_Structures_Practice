@@ -96,5 +96,11 @@ public class DynamicArrayList {
     data = new String[data.length];
     count=0;
     }
+    public boolean isEmpty(){
+        if(count==0){
+            return true;
+        }
+        return false;
+    }
 }
 
