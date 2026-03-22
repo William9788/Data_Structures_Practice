@@ -81,5 +81,16 @@ public class DynamicArrayList {
         count--;
         return object;
     }
+    public boolean contains(String object){
+        if(object==null){
+            throw new IllegalArgumentException("object cannot be null");
+        }
+        for(int i=0;i<count;i++){
+            if(data[i].equalsIgnoreCase(object)){
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
