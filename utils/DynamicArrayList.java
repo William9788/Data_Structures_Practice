@@ -62,6 +62,9 @@ public class DynamicArrayList {
         if(position<0||position>=count){
             throw new IndexOutOfBoundsException("Invalid position:"+position);
         }
+        if(object ==null){
+            throw new IllegalArgumentException("Object cant be null");
+        }
         String oldValue = data[position];
         data[position] = object;
         return oldValue;
