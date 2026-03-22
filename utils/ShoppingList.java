@@ -22,4 +22,5 @@ public class ShoppingList {
         int position = list.indexOf("Chocolate");
         System.out.println("Chocolate position:"+ position);
     }
+    
 }

@@ -28,7 +28,7 @@ public class DynamicArrayList {
 }
 
     public int indexOf(String target){
-        for(int i =0;i<=count;i++){
+        for(int i =0;i<count;i++){
             if(data[i].equalsIgnoreCase(target)){
                 return i;
         }
