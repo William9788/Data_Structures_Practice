@@ -57,6 +57,14 @@ public class DynamicArrayList {
         }
         data[position] = object;
         count++;
-    } 
+    }
+    public String set(String object,int position){
+        if(position<0||position>=count){
+            throw new IndexOutOfBoundsException("Invalid position:"+position);
+        }
+        String oldValue = data[position];
+        data[position] = object;
+        return oldValue;
+    }
 }
 
