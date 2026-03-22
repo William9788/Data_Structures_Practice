@@ -92,5 +92,9 @@ public class DynamicArrayList {
         }
         return false;
     }
+    public void clear(){
+    data = new String[data.length];
+    count=0;
+    }
 }
 
